@@ -1,0 +1,1290 @@
+@charset "UTF-8";
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.containerimages4 {
+  display: inline-block;
+  width: 1014px;
+  height: 963px;
+  background-color: rgba(8, 0, 0, 0);
+  position: relative;
+  right: 70px;
+  top: 12px;
+  z-index: 3;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.middle {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  /*transition: .5s ease; - определяет переходное изменение свойств элемента с 
+  продолжительностью в полсекунды и смягчением ease.*/
+  opacity: 0;
+  /*opacity: 0; - устанавливает непрозрачность элемента на 0, 
+  что делает его невидимым.*/
+  position: absolute;
+  /*position: absolute; - устанавливает элемент в абсолютное положение относительно 
+  его первого родительского элемента, который имеет относительное или абсолютное 
+  позиционирование.*/
+  top: 50%;
+  /*position: absolute; - устанавливает элемент в абсолютное положение относительно его первого
+   родительского элемента, который имеет относительное или абсолютное позиционирование.*/
+  left: 50%;
+  /*- задает горизонтальное положение элемента в середине родительского элемента.*/
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  /*transform: translate(-50%, -50%); - перемещает элемент на 50% его ширины и высоты влево 
+  и вверх от его исходной позиции. Это помогает центрировать элемент по горизонтали и вертикали.*/
+  -ms-transform: translate(-50%, -50%);
+}
+
+.text {
+  background-color: #af4c4c;
+  color: rgb(213, 3, 255);
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.text2 {
+  background-color: #af4c4c;
+  color: rgb(247, 0, 255);
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.linkimages:link, .linkimages:visited {
+  background-color: aqua;
+  color: rgb(97, 97, 97);
+  padding: 10px 10px;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  display: inline-block;
+  /*a:link - стили, которые будут применяться к не посещенным ссылкам.
+  a:visited - стили, которые будут применяться к посещенным ссылкам..
+  Затем определены стили для ссылок при наведении курсора мыши и при 
+  активации ссылки:
+  a:hover - стили, которые будут применяться к ссылке при наведении курсора мыши.
+  a:active - стили, которые будут применяться к ссылке во время её активации.
+  background-color: #f44336; - определяет цвет фона ссылки, который в данном случае 
+  будет красным с кодом цвета #f44336.
+  color: white; - определяет цвет текста ссылки, который в 
+  данном случае будет белым.
+  padding: 14px 25px; - устанавливает внутренние отступы для
+  ссылки по 14px сверху и снизу и 25px слева и справа.
+  text-align: center; - выравнивает текст ссылки по центру.
+  text-decoration: none; - удаляет подчеркивание и другие украшения 
+  текста ссылки.
+  display: inline-block; - устанавливает блочный тип элемента,
+  что позволяет задать высоту и ширину элемента и применять отступы.*/
+}
+
+.linkimages:hover, .linkimages:active {
+  background-color: #3a2327;
+}
+
+.container {
+  position: relative;
+  width: 32%;
+  height: auto;
+  top: 0px;
+  left: 0px;
+  margin: 0;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.container2:hover .image {
+  opacity: 0.3;
+  /*Когда происходит событие "hover" (наведение курсора мыши) на элемент "container",
+   прозрачность элемента "image" устанавливается на 0.3, что означает, что он становится 
+   слегка прозрачным. Таким образом, когда курсор мыши находится над "container", изображение внутри "container" становится менее заметным.*/
+}
+
+.container2 {
+  position: absolute;
+  width: 15%;
+  height: auto;
+  top: 273px;
+  left: 0px;
+  margin: 0;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container2:hover .middle {
+  opacity: 1;
+}
+
+.container3 {
+  width: 15%;
+  height: auto;
+  height: auto;
+  position: absolute;
+  top: 273px;
+  left: 171px;
+  margin: 0px;
+}
+
+.containe3:hover .image {
+  opacity: 0.3;
+}
+
+.container3:hover .middle {
+  opacity: 1;
+}
+
+.container4 {
+  position: relative;
+  width: 32%;
+  height: auto;
+  position: absolute;
+  top: 409px;
+  left: 0px;
+  margin: 0px;
+}
+
+.container4:hover .image {
+  opacity: 0.3;
+}
+
+.container4:hover .middle {
+  opacity: 1;
+}
+
+.container5 {
+  position: relative;
+  width: 67%;
+  height: auto;
+  position: absolute;
+  z-index: 3;
+  top: 0px;
+  left: 340px;
+  margin: 0px;
+}
+
+.container5:hover .image {
+  opacity: 0.3;
+}
+
+.container5:hover .middle {
+  opacity: 1;
+}
+
+.container6 {
+  position: relative;
+  width: 32%;
+  height: auto;
+  position: absolute;
+  top: 410px;
+  left: 344px;
+  margin: 0px;
+}
+
+.container6:hover .image {
+  opacity: 0.3;
+}
+
+.container6:hover .middle {
+  opacity: 1;
+}
+
+.container7 {
+  position: relative;
+  width: 32%;
+  height: auto;
+  position: absolute;
+  top: 410px;
+  left: 686px;
+  margin: 0px;
+}
+
+.container7:hover .image {
+  opacity: 0.3;
+}
+
+.container7:hover .middle {
+  opacity: 1;
+}
+
+.container8 {
+  position: relative;
+  width: 32%;
+  height: auto;
+  position: absolute;
+  top: 709px;
+  left: 0px;
+  margin: 0px;
+}
+
+.container4:hover .image {
+  opacity: 0.3;
+}
+
+.container4:hover .middle {
+  opacity: 1;
+}
+
+.container8 {
+  width: 32%;
+  height: auto;
+  position: absolute;
+  top: 685px;
+  left: 0px;
+  margin: 0px;
+}
+
+.container8:hover .image {
+  opacity: 0.3;
+}
+
+.container8:hover .middle {
+  opacity: 1;
+}
+
+.container9 {
+  position: relative;
+  width: 32%;
+  height: auto;
+  position: absolute;
+  top: 685px;
+  left: 344px;
+  margin: 0px;
+}
+
+.container9:hover .image {
+  opacity: 0.3;
+}
+
+.container9:hover .middle {
+  opacity: 1;
+}
+
+.container10 {
+  position: relative;
+  width: 32%;
+  height: auto;
+  position: absolute;
+  top: 685px;
+  left: 686px;
+  margin: 0px;
+}
+
+.container10:hover .image {
+  opacity: 0.3;
+}
+
+.container10:hover .middle {
+  opacity: 1;
+}
+
+.menublock {
+  display: block;
+  position: relative;
+  max-width: 300px;
+  height: auto;
+  left: 500px;
+}
+
+.txtabout {
+  display: block;
+  position: absolute;
+  height: 105px;
+  left: 0px;
+  top: 45px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  color: #C9A9A5;
+}
+
+.txtabout:hover {
+  color: #faf5f5;
+}
+
+.txtgallery {
+  display: block;
+  position: absolute;
+  left: 261px;
+  top: 45px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  color: #C9A9A5;
+}
+
+.txtgallery:hover {
+  color: #faf5f5;
+}
+
+.txtcontacts {
+  display: block;
+  position: absolute;
+  left: 512px;
+  top: 45px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  color: #C9A9A5;
+}
+
+.txtcontacts:hover {
+  color: #faf5f5;
+}
+
+.txtinstagram {
+  display: block;
+  position: absolute;
+  left: 772px;
+  top: 45px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  background: -webkit-gradient(linear, right top, left top, color-stop(24.98%, #925685), color-stop(25.42%, #6F1A97), color-stop(58.02%, #FF62DF), color-stop(111.58%, #FFB31F));
+  background: linear-gradient(270deg, #925685 24.98%, #6F1A97 25.42%, #FF62DF 58.02%, #FFB31F 111.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.txtinstagram:hover {
+  color: #faf5f5;
+}
+
+.txtmarketcontainer {
+  display: block;
+  position: relative;
+  width: 500px;
+  height: 100px;
+  left: 50%;
+}
+
+.txtmarket {
+  display: block;
+  position: relative;
+  left: 50%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 31px;
+  color: #5c5c5c;
+}
+
+.footer {
+  display: block;
+  position: relative;
+  margin-bottom: 0;
+  width: 1440px;
+  height: 30px;
+  margin: 0px auto;
+  margin-bottom: 0;
+  color: rgba(0, 0, 0, 0.856);
+  background-color: #161414;
+  margin-top: 0px;
+  z-index: 0;
+  min-height: 16vh;
+}
+
+.footercontainer {
+  display: block;
+  position: relative;
+  width: 144px;
+  height: 45px;
+  top: 12px;
+  left: 20px;
+  z-index: 1;
+}
+
+.vodafoncont {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: 1px;
+  top: 0px;
+  z-index: 3;
+}
+
+.kiyvstarcont {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: 1px;
+  top: 22px;
+  z-index: 3;
+}
+
+.nombercont {
+  display: block;
+  position: absolute;
+  width: 110px;
+  height: 39px;
+  left: 1px;
+  top: 0px;
+  z-index: 3;
+}
+
+.nomber1 {
+  position: absolute;
+  width: 110px;
+  height: 15px;
+  left: 23px;
+  top: 5px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  background: -webkit-gradient(linear, left bottom, left top, from(#FFF2F2), to(#FFF2F2)), -webkit-gradient(linear, left top, left bottom, color-stop(60.94%, #FFFFFF), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(0deg, #FFF2F2, #FFF2F2), linear-gradient(180deg, #FFFFFF 60.94%, rgba(255, 255, 255, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.nomber2 {
+  position: absolute;
+  width: 110px;
+  height: 15px;
+  left: 23px;
+  top: 27px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  background: -webkit-gradient(linear, left bottom, left top, from(#FFF2F2), to(#FFF2F2)), -webkit-gradient(linear, left top, left bottom, color-stop(60.94%, #FFFFFF), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(0deg, #FFF2F2, #FFF2F2), linear-gradient(180deg, #FFFFFF 60.94%, rgba(255, 255, 255, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.footercontainer2 {
+  display: block;
+  position: relative;
+  width: 144px;
+  height: 24px;
+  top: -33px;
+  left: 500px;
+  z-index: 0;
+}
+
+.instagramicon {
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 0px;
+  top: 0px;
+}
+
+.gmailicon {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 30px;
+  top: 0px;
+}
+
+.telegramicon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 56px;
+  top: 2px;
+}
+
+.twittericon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 87px;
+  top: 2px;
+}
+
+.footercontainer3 {
+  display: block;
+  position: relative;
+  width: 169px;
+  height: 63px;
+  top: -60px;
+  left: 250px;
+  z-index: 0;
+}
+
+.helpmenufotter {
+  position: absolute;
+  width: 101px;
+  height: 15.79px;
+  left: 0px;
+  top: 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  overflow: hidden;
+  color: #FFFFFF;
+}
+
+.helpmenufotter:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-position: under;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+.gallerymenufooter {
+  position: absolute;
+  width: 82.3px;
+  height: 15.79px;
+  left: 0px;
+  top: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
+.gallerymenufooter:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-position: under;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+.aboutusmenufooter {
+  position: absolute;
+  width: 81.05px;
+  height: 15.79px;
+  left: 0px;
+  top: 40px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
+.aboutusmenufooter:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-position: under;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+.instagrammenufooter {
+  position: absolute;
+  width: 101px;
+  height: 15.79px;
+  left: 90px;
+  top: 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
+.instagrammenufooter:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-position: under;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+.comtactsmenufooter {
+  position: absolute;
+  width: 101px;
+  height: 15.79px;
+  left: 90px;
+  top: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
+.comtactsmenufooter:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-position: under;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+.footercontainer4 {
+  display: block;
+  position: relative;
+  width: 196px;
+  height: 61px;
+  top: -120px;
+  left: 1193px;
+  z-index: 1;
+}
+
+.satinclubtext {
+  position: absolute;
+  width: 101px;
+  height: 56px;
+  left: 85px;
+  top: -3px;
+  font-family: "IM FELL DW Pica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+
+.ua {
+  position: absolute;
+  width: 10.44px;
+  height: 5.03px;
+  left: 177px;
+  top: 2px;
+  background: #40DDFF;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ua2 {
+  position: absolute;
+  width: 10.44px;
+  height: 5.03px;
+  left: 182px;
+  top: 5px;
+  background: #FFD465;
+}
+
+.satinclubcom {
+  position: absolute;
+  width: 200px;
+  height: 31px;
+  left: 0px;
+  top: 37px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 12px;
+  color: #CBC2C2;
+}
+
+.bodyabout {
+  position: relative;
+  width: 1440px;
+  height: 1288px;
+  margin: 0 auto;
+  background: #FFFDFD;
+}
+
+.abouttitle {
+  position: relative;
+  width: 1314px;
+  height: 179px;
+  left: 79px;
+  top: 268px;
+  margin: 0 auto;
+  background: #FFD482;
+}
+
+.aboutimagetitle {
+  position: absolute;
+  width: 107px;
+  height: 107px;
+  left: 549px;
+  top: 30px;
+  margin: 0 auto;
+}
+
+.abouttexttitle {
+  position: absolute;
+  width: 177px;
+  height: 68px;
+  left: 668px;
+  top: 30px;
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 68px;
+  /* identical to box height */
+  color: #020202;
+}
+
+.helpaboutcontainer {
+  position: absolute;
+  width: 1314px;
+  height: 680px;
+  left: 79px;
+  top: 465px;
+  margin: 0 auto;
+  background: #FFFFFF;
+}
+
+.arrow1 {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  left: 181px;
+  top: 100px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.textinfoabout1 {
+  position: absolute;
+  width: 1043px;
+  height: 94px;
+  left: 250px;
+  top: 100px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+}
+
+.pointercontainerabout {
+  position: absolute;
+  width: 96px;
+  height: 20px;
+  left: 672px;
+  top: 200px;
+  background: #D9D9D9;
+}
+
+.arrow2 {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  left: 175px;
+  top: 250px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.textinfoabout2 {
+  position: absolute;
+  width: 1043px;
+  height: 94px;
+  left: 250px;
+  top: 250px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+}
+
+.pointercontainerabout2 {
+  position: absolute;
+  width: 96px;
+  height: 20px;
+  left: 672px;
+  top: 350px;
+  background: #D9D9D9;
+}
+
+.arrow3 {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  left: 175px;
+  top: 400px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.textinfoabout3 {
+  position: absolute;
+  width: 1043px;
+  height: 94px;
+  left: 250px;
+  top: 400px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+}
+
+.pointercontainerabout3 {
+  position: absolute;
+  width: 96px;
+  height: 20px;
+  left: 672px;
+  top: 500px;
+  background: #D9D9D9;
+}
+
+.textabout3 {
+  position: absolute;
+  width: 1043px;
+  height: 94px;
+  left: 250px;
+  top: 400px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+}
+
+.nextpageaboutcontainer {
+  position: absolute;
+  width: 71.64px;
+  height: 26px;
+}
+
+.leftpageabout {
+  position: absolute;
+  width: 26px;
+  height: 20.8px;
+  background: #9BFF6C;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.rightpageabout {
+  position: absolute;
+  width: 26px;
+  height: 20.8px;
+  background: #9BFF6C;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.bodygallery {
+  width: 1440px;
+  height: 1000px;
+  color: #FFFFFF;
+  margin: 0 auto;
+}
+
+.gallerycontainer {
+  display: block;
+  position: relative;
+  width: 1314px;
+  height: 869px;
+  margin: 0 auto;
+  z-index: 1;
+  top: 12px;
+}
+
+.galleryimg {
+  display: block;
+  width: 426px;
+  height: 426px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  background-color: green;
+  z-index: 2;
+}
+
+.galleryimg2 {
+  display: block;
+  width: 426px;
+  height: 426px;
+  position: absolute;
+  left: 0;
+  top: 443px;
+  background-color: green;
+}
+
+.galleryimg3 {
+  display: block;
+  width: 426px;
+  height: 426px;
+  position: absolute;
+  left: 444px;
+  top: 0;
+  background-color: green;
+}
+
+.galleryimg4 {
+  display: block;
+  width: 426px;
+  height: 426px;
+  position: absolute;
+  left: 444px;
+  top: 443px;
+  background-color: green;
+}
+
+.galleryimg5 {
+  display: block;
+  width: 426px;
+  height: 426px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: green;
+}
+
+.galleryimg6 {
+  display: block;
+  width: 426px;
+  height: 426px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: green;
+}
+
+.gallerynextpagecontainer {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  margin: 0 auto;
+  z-index: 2;
+  top: 910px;
+}
+
+.galleryleftpage {
+  position: absolute;
+  width: 26px;
+  height: 50px;
+  top: 0px;
+  right: 0;
+  margin: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 3;
+}
+
+.galleryrightpage {
+  position: absolute;
+  width: 26px;
+  height: 50px;
+  top: 0px;
+  left: 0;
+  margin: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 3;
+}
+
+.galleryleftpage2 {
+  position: absolute;
+  width: 26px;
+  height: 50px;
+  top: 0px;
+  right: 0;
+  margin: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 3;
+}
+
+.galleryrightpage2 {
+  position: absolute;
+  width: 26px;
+  height: 50px;
+  top: 0px;
+  left: 0;
+  margin: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  z-index: 3;
+}
+
+.galleryimg11 {
+  display: block;
+  width: 426px;
+  height: 426px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  background-color: #f09842;
+  z-index: 2;
+}
+
+.galleryimg22 {
+  display: block;
+  width: 426px;
+  height: 426px;
+  position: absolute;
+  left: 0;
+  top: 443px;
+  background-color: #f09842;
+}
+
+.galleryimg33 {
+  display: block;
+  width: 426px;
+  height: 426px;
+  position: absolute;
+  left: 444px;
+  top: 0;
+  background-color: #f09842;
+}
+
+.galleryimg44 {
+  display: block;
+  width: 426px;
+  height: 426px;
+  position: absolute;
+  left: 444px;
+  top: 443px;
+  background-color: #f09842;
+}
+
+.galleryimg55 {
+  display: block;
+  width: 426px;
+  height: 426px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #f09842;
+}
+
+.galleryimg66 {
+  display: block;
+  width: 426px;
+  height: 426px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #f09842;
+}
+
+.gallerynextpagecontainer {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  margin: 0 auto;
+  z-index: 2;
+  top: 910px;
+}
+
+.galleryleftpage {
+  position: absolute;
+  width: 26px;
+  height: 50px;
+  top: 0px;
+  right: 0;
+  margin: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 3;
+}
+
+.galleryrightpage {
+  position: absolute;
+  width: 26px;
+  height: 50px;
+  top: 0px;
+  left: 0;
+  margin: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 3;
+}
+
+.galleryimg111 {
+  display: block;
+  width: 426px;
+  height: 426px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  background-color: #f377f7;
+  z-index: 2;
+}
+
+.galleryimg222 {
+  display: block;
+  width: 426px;
+  height: 426px;
+  position: absolute;
+  left: 0;
+  top: 443px;
+  background-color: #f377f7;
+}
+
+.galleryimg333 {
+  display: block;
+  width: 426px;
+  height: 426px;
+  position: absolute;
+  left: 444px;
+  top: 0;
+  background-color: #f377f7;
+}
+
+.galleryimg444 {
+  display: block;
+  width: 426px;
+  height: 426px;
+  position: absolute;
+  left: 444px;
+  top: 443px;
+  background-color: #f377f7;
+}
+
+.galleryimg555 {
+  display: block;
+  width: 426px;
+  height: 426px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #f377f7;
+}
+
+.galleryimg66a {
+  display: block;
+  width: 426px;
+  height: 426px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #f377f7;
+}
+
+.gallerynextpagecontainer {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  margin: 0 auto;
+  z-index: 2;
+  top: 910px;
+}
+
+.galleryleftpage3 {
+  position: absolute;
+  width: 26px;
+  height: 50px;
+  top: 0px;
+  right: 0;
+  margin: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  z-index: 3;
+}
+
+.galleryrightpage3 {
+  position: absolute;
+  width: 26px;
+  height: 50px;
+  top: 0px;
+  left: 0;
+  margin: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  z-index: 3;
+}
+
+.header {
+  width: 1440px;
+  height: 106px;
+  margin: 0 auto;
+  color: black;
+  background-color: #3a2327;
+}
+
+.body {
+  width: 1440px;
+  height: 973px;
+  margin: 0 auto;
+  color: black;
+  margin-top: 0px;
+  background-color: #ffffff;
+}
+
+.menupanel {
+  display: inline-block;
+  width: 318px;
+  height: 667px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1725490196);
+  z-index: 1;
+  top: 12px;
+  left: 12px;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.menupaneltwo {
+  width: 296px;
+  height: 644px;
+  position: relative;
+  background-color: rgb(240, 240, 240);
+  z-index: 2;
+  top: 12px;
+  left: 12px;
+  margin: 0;
+}
